@@ -82,8 +82,12 @@ def main():
                                            "multiple options can be separate by comma (see example above).",
                                            "plugin_name can be omitted if only 1 plugin is enabled."]))
     optionParser.add_option("--list-plugin-options", action="store_true", dest="list_plugin_options", help="Show all plugin options")
+    optionParser.add_option("-d", "--debug", action="store_true", dest="debug", help="Enable debug log")
 
     (options, args) = optionParser.parse_args()
+
+    if options.debug:
+        logging.getLogger().setLevel(logging.DEBUG)
 
     # List plugins
     if options.listplugins or options.list_plugin_options:
