@@ -112,7 +112,7 @@ class StraceParser:
 
         remainLine = line
 
-        m = re.match(r"([0-9:. ]*)([a-z]+\(.*[ ]+=[ ]+[-0-9]+)(.*)", line)
+        m = re.match(r"([0-9:. ]*)([a-z_]+\(.*[ ]+=[ ]+[-0-9]+)(.*)", line)
         if m:
             pre = m.group(1)
             mid = m.group(2)
