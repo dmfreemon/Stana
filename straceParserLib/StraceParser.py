@@ -34,7 +34,6 @@ class StraceParser:
     The defination of dict: please refer to _parseLine
     """
 
-
     def __init__(self):
         # _completeSyscallCallbackHook
         # the dict contains a list for each syscall that registered by someone who is
@@ -57,13 +56,12 @@ class StraceParser:
 
     def registerSyscallHook(self, fullSyscallName, func):
         self._registerHookInTable(fullSyscallName, self._completeSyscallCallbackHook, func)
-        
+
     def registerRawSyscallHook(self, fullSyscallName, func):
         self._registerHookInTable(fullSyscallName, self._rawSyscallCallbackHook, func)
 
     def _registerHookInTable(self, name, table, func):
         table[name].append(func)
-        
 
     def startParse(self, reader, straceOptions):
         self._parse(reader, straceOptions)
@@ -75,23 +73,24 @@ class StraceParser:
             straceOptions["havePid"] = True/False
             straceOptions["haveTime"] = None/"t"/"tt"/"ttt"
             straceOptions["haveTimeSpent"] True/False
-                
+
             It use peek() on the reader so it will not abvance the position of
             the stream.
         """
-        buf = reader.buffer.peek(4096);
 
         failCount = 0
-        for line in buf.split('\n'):
-            if failCount == 3:
+        for line in reader:
+            if failCount == 2048:
                 return None
             if "unfinish" in line or "resume" in line:
                 continue
             straceOptions = self._detectLineFormat(line)
             if straceOptions:
+                reader.seek(0)  # Finish detection, return to the head of file
                 return straceOptions
             else:
                 failCount += 1
+        reader.seek(0)
         return None
 
     def _detectTimeFormat(self, timeStr):
@@ -118,8 +117,9 @@ class StraceParser:
             mid = m.group(2)
             post = m.group(3)
         else:
+            logging.debug(line)
             logging.debug("_detectLineFormat: Failed: unable to match the line, give up detection.")
-            return
+            return None
 
         if pre != '':
             preList = pre.strip().split()
@@ -142,8 +142,8 @@ class StraceParser:
                 haveTimeSpent = True
             else:
                 haveTimeSpent = False
-            
-        straceOptions = {}    
+
+        straceOptions = {}
         straceOptions["havePid"] = havePid
         straceOptions["haveTime"] = haveTime
         straceOptions["haveTimeSpent"] = haveTimeSpent
@@ -190,7 +190,6 @@ class StraceParser:
                 reconstructSyscall = True
                 #print "debug reconstructed line:", line
 
-
             # Parse the line
             #print line
             result = self._parseLine(line, straceOptions)
@@ -221,8 +220,7 @@ class StraceParser:
                     for func in self._completeSyscallCallbackHook["ALL"]:
                         func(completeSyscallResult)
 
-        return 
-
+        return
 
     def _timeStrToTime(self, timeStr, timeFormat):
         """ _timeStrToTime
@@ -252,7 +250,7 @@ class StraceParser:
 #   It parse a complete line and return a dict with the following:
 #   pid :       pid (if havePid enabled)
 #   startTime : start time of the call (if haveTime enabled)
-#   syscall :   system call function 
+#   syscall :   system call function
 #   args :      a list of arguments ([] if no options)
 #   return :    return value (+/- int or hex number string or '?' (e.g. exit syscall)), not exist if it is an unfinished syscall
 #   timeSpent : time spent in syscall (if haveTimeSpent enable. But even so, it may not exist in some case (e.g. exit syscall) and None will be stored in this field)
@@ -263,7 +261,7 @@ class StraceParser:
 #   (Not implemented) signalEvent : signal event (no syscall, args, return)
 #
     def _parseLine(self, line, straceOptions):
-        result = {}    
+        result = {}
         remainLine = line
 
         try:
@@ -278,8 +276,8 @@ class StraceParser:
                 #result["signalEvent"] = remainLine
                 #return result
                 ### Ignore signal line now
-                return 
-            
+                return
+
             # If it is unfinished/resumed syscall, still parse it but let the
             # caller (_parse) determine what to do
             if "<unfinished ...>" in remainLine:
@@ -316,8 +314,8 @@ class StraceParser:
             #exctype, value, t = sys.exc_info()
             #print traceback.print_exc()
             #print sys.exc_info()
-            return 
-            
+            return
+
         return result
 
     def _countPrecedingBackslashes(self, s, pos):
