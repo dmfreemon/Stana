@@ -1,0 +1,286 @@
+10459 18:22:41.217770 futex(0xc5f039fc, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+10259 18:22:41.217889 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10258 18:22:41.217923 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10257 18:22:41.217955 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10256 18:22:41.217987 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10255 18:22:41.218017 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10254 18:22:41.218047 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10253 18:22:41.218077 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10252 18:22:41.218119 gettimeofday( <unfinished ...>
+10251 18:22:41.218152 gettimeofday( <unfinished ...>
+10250 18:22:41.218183 gettimeofday( <unfinished ...>
+10249 18:22:41.218220 gettimeofday( <unfinished ...>
+10248 18:22:41.218250 gettimeofday( <unfinished ...>
+10247 18:22:41.218281 gettimeofday( <unfinished ...>
+10246 18:22:41.218313 gettimeofday( <unfinished ...>
+10245 18:22:41.218343 gettimeofday( <unfinished ...>
+10244 18:22:41.218373 gettimeofday( <unfinished ...>
+10243 18:22:41.218404 gettimeofday( <unfinished ...>
+10242 18:22:41.218436 gettimeofday( <unfinished ...>
+10241 18:22:41.218466 gettimeofday( <unfinished ...>
+10240 18:22:41.218496 gettimeofday( <unfinished ...>
+10239 18:22:41.218526 gettimeofday( <unfinished ...>
+10238 18:22:41.218567 gettimeofday( <unfinished ...>
+10237 18:22:41.218597 gettimeofday( <unfinished ...>
+10236 18:22:41.218628 gettimeofday( <unfinished ...>
+10235 18:22:41.218658 gettimeofday( <unfinished ...>
+10234 18:22:41.218689 gettimeofday( <unfinished ...>
+10233 18:22:41.218719 gettimeofday( <unfinished ...>
+10232 18:22:41.218749 gettimeofday( <unfinished ...>
+10231 18:22:41.218780 gettimeofday( <unfinished ...>
+10230 18:22:41.218812 gettimeofday( <unfinished ...>
+10229 18:22:41.218842 gettimeofday( <unfinished ...>
+10228 18:22:41.218872 gettimeofday( <unfinished ...>
+10227 18:22:41.218903 gettimeofday( <unfinished ...>
+10226 18:22:41.218934 gettimeofday( <unfinished ...>
+10225 18:22:41.218964 gettimeofday( <unfinished ...>
+10224 18:22:41.218995 gettimeofday( <unfinished ...>
+10223 18:22:41.219025 gettimeofday( <unfinished ...>
+10222 18:22:41.219056 gettimeofday( <unfinished ...>
+10221 18:22:41.219086 gettimeofday( <unfinished ...>
+10220 18:22:41.219117 gettimeofday( <unfinished ...>
+10219 18:22:41.219149 gettimeofday( <unfinished ...>
+10218 18:22:41.219180 gettimeofday( <unfinished ...>
+10217 18:22:41.219211 gettimeofday( <unfinished ...>
+10216 18:22:41.219241 gettimeofday( <unfinished ...>
+10215 18:22:41.219272 gettimeofday( <unfinished ...>
+10214 18:22:41.219303 gettimeofday( <unfinished ...>
+10213 18:22:41.219332 gettimeofday( <unfinished ...>
+10212 18:22:41.219364 gettimeofday( <unfinished ...>
+10211 18:22:41.219395 gettimeofday( <unfinished ...>
+10210 18:22:41.219425 gettimeofday( <unfinished ...>
+10209 18:22:41.219456 gettimeofday( <unfinished ...>
+10208 18:22:41.219485 gettimeofday( <unfinished ...>
+10207 18:22:41.219517 gettimeofday( <unfinished ...>
+10206 18:22:41.219549 gettimeofday( <unfinished ...>
+10205 18:22:41.219579 gettimeofday( <unfinished ...>
+10204 18:22:41.219610 gettimeofday( <unfinished ...>
+10203 18:22:41.219640 gettimeofday( <unfinished ...>
+10201 18:22:41.219670 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10200 18:22:41.219701 gettimeofday( <unfinished ...>
+10199 18:22:41.219740 futex(0x860a12c, FUTEX_WAIT_PRIVATE, 232529, NULL <unfinished ...>
+10198 18:22:41.219779 futex(0xcdf15008, FUTEX_WAIT_PRIVATE, 233041, NULL <unfinished ...>
+10085 18:22:41.219819 futex(0x8c38994, FUTEX_WAIT_PRIVATE, 238085, NULL <unfinished ...>
+10084 18:22:41.219858 futex(0x8c3881c, FUTEX_WAIT_PRIVATE, 237919, NULL <unfinished ...>
+10071 18:22:41.219897 futex(0x8c386a4, FUTEX_WAIT_PRIVATE, 238041, NULL <unfinished ...>
+10070 18:22:41.219935 futex(0x8c3852c, FUTEX_WAIT_PRIVATE, 238089, NULL <unfinished ...>
+10055 18:22:41.219973 futex(0x8c3837c, FUTEX_WAIT_PRIVATE, 237985, NULL <unfinished ...>
+10054 18:22:41.220011 futex(0x8c381cc, FUTEX_WAIT_PRIVATE, 238215, NULL <unfinished ...>
+10052 18:22:41.220050 futex(0x8c38054, FUTEX_WAIT_PRIVATE, 238125, NULL <unfinished ...>
+10051 18:22:41.220097 futex(0x8c37edc, FUTEX_WAIT_PRIVATE, 238199, NULL <unfinished ...>
+10050 18:22:41.220136 futex(0x8c37d64, FUTEX_WAIT_PRIVATE, 129633, NULL <unfinished ...>
+10049 18:22:41.220174 futex(0xc70e8f9c, FUTEX_WAIT_PRIVATE, 178763, NULL <unfinished ...>
+10048 18:22:41.220213 futex(0xcac13edc, FUTEX_WAIT_PRIVATE, 10279, NULL <unfinished ...>
+10047 18:22:41.220251 futex(0x8feaff4, FUTEX_WAIT_PRIVATE, 10287, NULL <unfinished ...>
+10046 18:22:41.220289 futex(0x8fe9aa4, FUTEX_WAIT_PRIVATE, 10287, NULL <unfinished ...>
+10045 18:22:41.220327 futex(0x8fe992c, FUTEX_WAIT_PRIVATE, 10293, NULL <unfinished ...>
+10044 18:22:41.220366 futex(0x8fe97b4, FUTEX_WAIT_PRIVATE, 10287, NULL <unfinished ...>
+10043 18:22:41.220404 futex(0x8fe963c, FUTEX_WAIT_PRIVATE, 10283, NULL <unfinished ...>
+10042 18:22:41.220442 futex(0x8fe8254, FUTEX_WAIT_PRIVATE, 10287, NULL <unfinished ...>
+10041 18:22:41.220480 futex(0x8fe94c4, FUTEX_WAIT_PRIVATE, 10287, NULL <unfinished ...>
+10040 18:22:41.220518 futex(0x8b52f5c, FUTEX_WAIT_PRIVATE, 10283, NULL <unfinished ...>
+10039 18:22:41.220556 futex(0x84b554c, FUTEX_WAIT_PRIVATE, 10297, NULL <unfinished ...>
+9904  18:22:41.220621 recv(272,  <unfinished ...>
+9875  18:22:41.220657 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+9874  18:22:41.220695 futex(0xc77defe4, FUTEX_WAIT_PRIVATE, 8549, NULL <unfinished ...>
+9873  18:22:41.220736 futex(0xc5f004dc, FUTEX_WAIT_PRIVATE, 14429, NULL <unfinished ...>
+9872  18:22:41.220777 futex(0xcaa43354, FUTEX_WAIT_PRIVATE, 14629, NULL <unfinished ...>
+9871  18:22:41.220816 futex(0xca7afee4, FUTEX_WAIT_PRIVATE, 14873, NULL <unfinished ...>
+9870  18:22:41.220855 futex(0xcb2f5a2c, FUTEX_WAIT_PRIVATE, 905, NULL <unfinished ...>
+9869  18:22:41.220893 futex(0xca987acc, FUTEX_WAIT_PRIVATE, 907, NULL <unfinished ...>
+9868  18:22:41.220934 futex(0xca7aff1c, FUTEX_WAIT_PRIVATE, 15177, NULL <unfinished ...>
+9867  18:22:41.220972 futex(0xc5f643dc, FUTEX_WAIT_PRIVATE, 15571, NULL <unfinished ...>
+9866  18:22:41.221004 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+9818  18:22:41.221053 futex(0xce1f1da0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+9817  18:22:41.221091 select(263, [262], NULL, NULL, {7, 600000} <unfinished ...>
+9816  18:22:41.221153 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+9815  18:22:41.221192 select(275, [260 274], NULL, NULL, {9, 560000} <unfinished ...>
+9810  18:22:41.221242 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+9809  18:22:41.221282 futex(0x84d1994, FUTEX_WAIT_PRIVATE, 3, NULL <unfinished ...>
+9808  18:22:41.221322 futex(0x84cfaec, FUTEX_WAIT_PRIVATE, 3947, NULL <unfinished ...>
+9807  18:22:41.221361 futex(0x84c47ec, FUTEX_WAIT_PRIVATE, 3865, NULL <unfinished ...>
+9806  18:22:41.221400 futex(0xf7ac6a20, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+9804  18:22:41.221440 futex(0x84b9cc4, FUTEX_WAIT_PRIVATE, 36977, NULL <unfinished ...>
+9803  18:22:41.221479 futex(0x84b47c4, FUTEX_WAIT_PRIVATE, 13407, NULL <unfinished ...>
+9802  18:22:41.221510 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+9796  18:22:41.221552 futex(0x83f868c, FUTEX_WAIT_PRIVATE, 37105, NULL <unfinished ...>
+9795  18:22:41.221591 futex(0x83f7034, FUTEX_WAIT_PRIVATE, 36977, NULL <unfinished ...>
+9794  18:22:41.221632 futex(0x83f59dc, FUTEX_WAIT_PRIVATE, 36933, NULL <unfinished ...>
+9793  18:22:41.221672 futex(0x83f4384, FUTEX_WAIT_PRIVATE, 36933, NULL <unfinished ...>
+9792  18:22:41.221711 futex(0x83f2d2c, FUTEX_WAIT_PRIVATE, 37279, NULL <unfinished ...>
+9791  18:22:41.221749 futex(0x83f16d4, FUTEX_WAIT_PRIVATE, 36935, NULL <unfinished ...>
+9788  18:22:41.221789 futex(0x83f1674, FUTEX_WAIT_PRIVATE, 389, NULL <unfinished ...>
+10259 18:22:41.221896 <... clock_gettime resumed> {1387534961, 217909000}) = 0 <0.003986>
+10258 18:22:41.221932 <... clock_gettime resumed> {1387534961, 217948000}) = 0 <0.003990>
+10257 18:22:41.221965 <... clock_gettime resumed> {1387534961, 217979000}) = 0 <0.003992>
+10256 18:22:41.221996 <... clock_gettime resumed> {1387534961, 218009000}) = 0 <0.003991>
+10255 18:22:41.222026 <... clock_gettime resumed> {1387534961, 218033000}) = 0 <0.003992>
+10254 18:22:41.222064 <... clock_gettime resumed> {1387534961, 218063000}) = 0 <0.003998>
+10253 18:22:41.222095 <... clock_gettime resumed> {1387534961, 218112000}) = 0 <0.004000>
+10252 18:22:41.222135 <... gettimeofday resumed> {1387534961, 218143}, NULL) = 0 <0.003997>
+10251 18:22:41.222165 <... gettimeofday resumed> {1387534961, 218174}, NULL) = 0 <0.003996>
+10250 18:22:41.222194 <... gettimeofday resumed> {1387534961, 218215}, NULL) = 0 <0.003993>
+10249 18:22:41.222229 <... gettimeofday resumed> {1387534961, 218236}, NULL) = 0 <0.003992>
+10248 18:22:41.222259 <... gettimeofday resumed> {1387534961, 218276}, NULL) = 0 <0.003990>
+10247 18:22:41.222289 <... gettimeofday resumed> {1387534961, 218307}, NULL) = 0 <0.003990>
+10246 18:22:41.222318 <... gettimeofday resumed> {1387534961, 218335}, NULL) = 0 <0.003987>
+10245 18:22:41.222346 <... gettimeofday resumed> {1387534961, 218359}, NULL) = 0 <0.003986>
+10244 18:22:41.222374 <... gettimeofday resumed> {1387534961, 218399}, NULL) = 0 <0.003984>
+10243 18:22:41.222404 <... gettimeofday resumed> {1387534961, 218427}, NULL) = 0 <0.003983>
+10242 18:22:41.222433 <... gettimeofday resumed> {1387534961, 218458}, NULL) = 0 <0.003980>
+10241 18:22:41.222461 <... gettimeofday resumed> {1387534961, 218488}, NULL) = 0 <0.003979>
+10240 18:22:41.222489 <... gettimeofday resumed> {1387534961, 218518}, NULL) = 0 <0.003977>
+10239 18:22:41.222517 <... gettimeofday resumed> {1387534961, 218560}, NULL) = 0 <0.003965>
+10238 18:22:41.222546 <... gettimeofday resumed> {1387534961, 218583}, NULL) = 0 <0.003961>
+10237 18:22:41.222574 <... gettimeofday resumed> {1387534961, 218620}, NULL) = 0 <0.003958>
+10236 18:22:41.222603 <... gettimeofday resumed> {1387534961, 218652}, NULL) = 0 <0.003958>
+10235 18:22:41.222631 <... gettimeofday resumed> {1387534961, 218682}, NULL) = 0 <0.003956>
+10234 18:22:41.222659 <... gettimeofday resumed> {1387534961, 218711}, NULL) = 0 <0.003954>
+10233 18:22:41.222687 <... gettimeofday resumed> {1387534961, 218734}, NULL) = 0 <0.003951>
+10232 18:22:41.222715 <... gettimeofday resumed> {1387534961, 218772}, NULL) = 0 <0.003948>
+10231 18:22:41.222745 <... gettimeofday resumed> {1387534961, 218803}, NULL) = 0 <0.003947>
+10230 18:22:41.222773 <... gettimeofday resumed> {1387534961, 218834}, NULL) = 0 <0.003945>
+10229 18:22:41.222802 <... gettimeofday resumed> {1387534961, 218858}, NULL) = 0 <0.003942>
+10228 18:22:41.222830 <... gettimeofday resumed> {1387534961, 218895}, NULL) = 0 <0.003940>
+10227 18:22:41.222861 <... gettimeofday resumed> {1387534961, 218926}, NULL) = 0 <0.003939>
+10226 18:22:41.222889 <... gettimeofday resumed> {1387534961, 218956}, NULL) = 0 <0.003938>
+10225 18:22:41.222917 <... gettimeofday resumed> {1387534961, 218987}, NULL) = 0 <0.003935>
+10224 18:22:41.222945 <... gettimeofday resumed> {1387534961, 219017}, NULL) = 0 <0.003933>
+10223 18:22:41.222974 <... gettimeofday resumed> {1387534961, 219048}, NULL) = 0 <0.003931>
+10222 18:22:41.223002 <... gettimeofday resumed> {1387534961, 219078}, NULL) = 0 <0.003928>
+10221 18:22:41.223030 <... gettimeofday resumed> {1387534961, 219102}, NULL) = 0 <0.003927>
+10220 18:22:41.223059 <... gettimeofday resumed> {1387534961, 219140}, NULL) = 0 <0.003924>
+10219 18:22:41.223089 <... gettimeofday resumed> {1387534961, 219171}, NULL) = 0 <0.003923>
+10218 18:22:41.223118 <... gettimeofday resumed> {1387534961, 219202}, NULL) = 0 <0.003920>
+10217 18:22:41.223146 <... gettimeofday resumed> {1387534961, 219226}, NULL) = 0 <0.003918>
+10216 18:22:41.223174 <... gettimeofday resumed> {1387534961, 219264}, NULL) = 0 <0.003915>
+10215 18:22:41.223205 <... gettimeofday resumed> {1387534961, 219294}, NULL) = 0 <0.003915>
+10214 18:22:41.223233 <... gettimeofday resumed> {1387534961, 219318}, NULL) = 0 <0.003914>
+10213 18:22:41.223262 <... gettimeofday resumed> {1387534961, 219356}, NULL) = 0 <0.003911>
+10212 18:22:41.223291 <... gettimeofday resumed> {1387534961, 219386}, NULL) = 0 <0.003910>
+10211 18:22:41.223320 <... gettimeofday resumed> {1387534961, 219417}, NULL) = 0 <0.003907>
+10210 18:22:41.223348 <... gettimeofday resumed> {1387534961, 219448}, NULL) = 0 <0.003905>
+10209 18:22:41.223382 <... gettimeofday resumed> {1387534961, 219471}, NULL) = 0 <0.003909>
+10208 18:22:41.223411 <... gettimeofday resumed> {1387534961, 219508}, NULL) = 0 <0.003908>
+10207 18:22:41.223441 <... gettimeofday resumed> {1387534961, 219539}, NULL) = 0 <0.003907>
+10206 18:22:41.223471 <... gettimeofday resumed> {1387534961, 219571}, NULL) = 0 <0.003904>
+10205 18:22:41.223498 <... gettimeofday resumed> {1387534961, 219602}, NULL) = 0 <0.003902>
+10204 18:22:41.223527 <... gettimeofday resumed> {1387534961, 219632}, NULL) = 0 <0.003900>
+10203 18:22:41.223555 <... gettimeofday resumed> {1387534961, 219656}, NULL) = 0 <0.003898>
+10201 18:22:41.223584 <... clock_gettime resumed> {1387534961, 219694000}) = 0 <0.003896>
+10200 18:22:41.223616 <... gettimeofday resumed> {1387534961, 219724}, NULL) = 0 <0.003898>
+9875  18:22:41.223645 <... clock_gettime resumed> {1387534961, 220673000}) = 0 <0.002969>
+9866  18:22:41.223676 <... clock_gettime resumed> {1387534961, 221039000}) = 0 <0.002654>
+9816  18:22:41.223743 <... clock_gettime resumed> {1387534961, 221177000}) = 0 <0.002544>
+9810  18:22:41.223792 <... clock_gettime resumed> {1387534961, 221265000}) = 0 <0.002532>
+9802  18:22:41.223824 <... clock_gettime resumed> {1387534961, 221536000}) = 0 <0.002296>
+10259 18:22:41.223952 futex(0xc70e8f3c, FUTEX_WAIT_PRIVATE, 1, {0, 345925000} <unfinished ...>
+10258 18:22:41.224000 futex(0x8c5a294, FUTEX_WAIT_PRIVATE, 1, {0, 165811000} <unfinished ...>
+10257 18:22:41.224048 futex(0xcb27c39c, FUTEX_WAIT_PRIVATE, 1, {0, 185802000} <unfinished ...>
+10256 18:22:41.224096 futex(0xc5f0397c, FUTEX_WAIT_PRIVATE, 1, {0, 185784000} <unfinished ...>
+10255 18:22:41.224141 futex(0xc74d122c, FUTEX_WAIT_PRIVATE, 1, {1, 115789000} <unfinished ...>
+10254 18:22:41.224186 futex(0x8c1d33c, FUTEX_WAIT_PRIVATE, 1, {0, 15724000} <unfinished ...>
+10253 18:22:41.224232 futex(0xc5f642d4, FUTEX_WAIT_PRIVATE, 1, {0, 465697000} <unfinished ...>
+10252 18:22:41.224271 epoll_wait(427,  <unfinished ...>
+10251 18:22:41.224302 epoll_wait(424,  <unfinished ...>
+10250 18:22:41.224332 epoll_wait(421,  <unfinished ...>
+10249 18:22:41.224366 epoll_wait(418,  <unfinished ...>
+10248 18:22:41.224400 epoll_wait(415,  <unfinished ...>
+10247 18:22:41.224437 epoll_wait(412,  <unfinished ...>
+10246 18:22:41.224473 epoll_wait(409,  <unfinished ...>
+10245 18:22:41.224507 epoll_wait(406,  <unfinished ...>
+10244 18:22:41.224540 epoll_wait(403,  <unfinished ...>
+10243 18:22:41.224576 epoll_wait(400,  <unfinished ...>
+10242 18:22:41.224607 gettimeofday( <unfinished ...>
+10241 18:22:41.224641 epoll_wait(394,  <unfinished ...>
+10240 18:22:41.224675 epoll_wait(391,  <unfinished ...>
+10239 18:22:41.224709 epoll_wait(388,  <unfinished ...>
+10238 18:22:41.224743 epoll_wait(385,  <unfinished ...>
+10237 18:22:41.224777 epoll_wait(382,  <unfinished ...>
+10236 18:22:41.224812 epoll_wait(379,  <unfinished ...>
+10235 18:22:41.224846 epoll_wait(376,  <unfinished ...>
+10234 18:22:41.224881 epoll_wait(373,  <unfinished ...>
+10233 18:22:41.224915 epoll_wait(370,  <unfinished ...>
+10232 18:22:41.224950 epoll_wait(367,  <unfinished ...>
+10231 18:22:41.224986 epoll_wait(364,  <unfinished ...>
+10230 18:22:41.225022 epoll_wait(361,  <unfinished ...>
+10229 18:22:41.225057 epoll_wait(358,  <unfinished ...>
+10228 18:22:41.225092 epoll_wait(355,  <unfinished ...>
+10227 18:22:41.225128 epoll_wait(352,  <unfinished ...>
+10226 18:22:41.225162 epoll_wait(349,  <unfinished ...>
+10225 18:22:41.225199 epoll_wait(346,  <unfinished ...>
+10224 18:22:41.225234 epoll_wait(343,  <unfinished ...>
+10223 18:22:41.225269 epoll_wait(340,  <unfinished ...>
+10222 18:22:41.225304 epoll_wait(337,  <unfinished ...>
+10221 18:22:41.225338 epoll_wait(334,  <unfinished ...>
+10220 18:22:41.225373 epoll_wait(331,  <unfinished ...>
+10219 18:22:41.225410 epoll_wait(328,  <unfinished ...>
+10218 18:22:41.225446 epoll_wait(325,  <unfinished ...>
+10217 18:22:41.225481 epoll_wait(322,  <unfinished ...>
+10216 18:22:41.225516 epoll_wait(319,  <unfinished ...>
+10215 18:22:41.225553 epoll_wait(316,  <unfinished ...>
+10214 18:22:41.225595 epoll_wait(313,  <unfinished ...>
+10213 18:22:41.225629 epoll_wait(310,  <unfinished ...>
+10212 18:22:41.225666 epoll_wait(307,  <unfinished ...>
+10211 18:22:41.225702 epoll_wait(304,  <unfinished ...>
+10210 18:22:41.225736 epoll_wait(301,  <unfinished ...>
+10209 18:22:41.225771 epoll_wait(298,  <unfinished ...>
+10208 18:22:41.225805 epoll_wait(295,  <unfinished ...>
+10207 18:22:41.225840 epoll_wait(292,  <unfinished ...>
+10206 18:22:41.225875 epoll_wait(289,  <unfinished ...>
+10205 18:22:41.225910 epoll_wait(286,  <unfinished ...>
+10204 18:22:41.225945 epoll_wait(283,  <unfinished ...>
+10203 18:22:41.225980 epoll_wait(280,  <unfinished ...>
+10201 18:22:41.226017 futex(0xc91df02c, FUTEX_WAIT_PRIVATE, 1, {0, 494072000} <unfinished ...>
+10200 18:22:41.226060 epoll_wait(277,  <unfinished ...>
+9875  18:22:41.226098 futex(0xc5f6444c, FUTEX_WAIT_PRIVATE, 1, {42, 443054000} <unfinished ...>
+9866  18:22:41.226144 futex(0xca2e0dcc, FUTEX_WAIT_PRIVATE, 1, {40, 730794000} <unfinished ...>
+9816  18:22:41.226190 futex(0xce1f1ad8, FUTEX_WAIT_PRIVATE, 65889, {30, 871767910} <unfinished ...>
+9810  18:22:41.226233 futex(0xc7d497dc, FUTEX_WAIT_PRIVATE, 1, {0, 12671000} <unfinished ...>
+9802  18:22:41.226279 futex(0x8548c7c, FUTEX_WAIT_PRIVATE, 1, {0, 592315000} <unfinished ...>
+10242 18:22:41.226318 <... gettimeofday resumed> {1387534961, 224630}, NULL) = 0 <0.001693>
+10242 18:22:41.226383 epoll_wait(397,  <unfinished ...>
+10254 18:22:41.254302 <... futex resumed> ) = -1 ETIMEDOUT (Connection timed out) <0.030087>
+9810  18:22:41.254358 <... futex resumed> ) = -1 ETIMEDOUT (Connection timed out) <0.028099>
+10254 18:22:41.254413 futex(0xcb025c28, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+9810  18:22:41.254457 futex(0x84d3128, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+10254 18:22:41.254493 <... futex resumed> ) = 0 <0.000058>
+9810  18:22:41.254520 <... futex resumed> ) = 0 <0.000045>
+10254 18:22:41.254566 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+9810  18:22:41.254599 gettimeofday( <unfinished ...>
+10254 18:22:41.254633 <... clock_gettime resumed> {1025762, 301290239}) = 0 <0.000048>
+9810  18:22:41.254665 <... gettimeofday resumed> {1387534961, 254615}, NULL) = 0 <0.000049>
+10254 18:22:41.254712 gettimeofday( <unfinished ...>
+9810  18:22:41.254745 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+10254 18:22:41.254778 <... gettimeofday resumed> {1387534961, 254737}, NULL) = 0 <0.000047>
+9810  18:22:41.254809 <... clock_gettime resumed> {1025762, 301459239}) = 0 <0.000047>
+10254 18:22:41.254854 gettimeofday( <unfinished ...>
+9810  18:22:41.254886 gettimeofday( <unfinished ...>
+10254 18:22:41.254919 <... gettimeofday resumed> {1387534961, 254878}, NULL) = 0 <0.000045>
+9810  18:22:41.254949 <... gettimeofday resumed> {1387534961, 254901}, NULL) = 0 <0.000047>
+10254 18:22:41.254996 gettimeofday( <unfinished ...>
+9810  18:22:41.255028 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+10254 18:22:41.255062 <... gettimeofday resumed> {1387534961, 255020}, NULL) = 0 <0.000047>
+9810  18:22:41.255092 <... clock_gettime resumed> {1387534961, 255044000}) = 0 <0.000047>
+10254 18:22:41.255139 gettimeofday( <unfinished ...>
+9810  18:22:41.255179 futex(0xc7d497dc, FUTEX_WAIT_PRIVATE, 1, {0, 49857000} <unfinished ...>
+10254 18:22:41.255217 <... gettimeofday resumed> {1387534961, 255163}, NULL) = 0 <0.000059>
+10254 18:22:41.255276 clock_gettime(CLOCK_REALTIME, {1387534961, 255302000}) = 0 <0.000013>
+10254 18:22:41.255360 futex(0x8c1d33c, FUTEX_WAIT_PRIVATE, 1, {0, 998861000} <unfinished ...>
+9810  18:22:41.323814 <... futex resumed> ) = -1 ETIMEDOUT (Connection timed out) <0.068600>
+9810  18:22:41.324265 futex(0x84d3128, FUTEX_WAKE_PRIVATE, 1) = 0 <0.000017>
+9810  18:22:41.324348 gettimeofday({1387534961, 324366}, NULL) = 0 <0.000014>
+9810  18:22:41.324419 clock_gettime(CLOCK_MONOTONIC, {1025762, 371136239}) = 0 <0.000014>
+9810  18:22:41.324485 gettimeofday({1387534961, 324502}, NULL) = 0 <0.000014>
+9810  18:22:41.324552 clock_gettime(CLOCK_REALTIME, {1387534961, 324569000}) = 0 <0.000014>
+9810  18:22:41.324643 futex(0xc7d497dc, FUTEX_WAIT_PRIVATE, 1, {0, 49933000} <unfinished ...>
+10258 18:22:41.394117 <... futex resumed> ) = -1 ETIMEDOUT (Connection timed out) <0.170084>
+9810  18:22:41.394167 <... futex resumed> ) = -1 ETIMEDOUT (Connection timed out) <0.069498>
+10258 18:22:41.394211 futex(0xcb02b928, FUTEX_WAKE_PRIVATE, 1) = 0 <0.000031>
+9810  18:22:41.394306 futex(0x84d3128, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+10258 18:22:41.394354 clock_gettime(CLOCK_MONOTONIC, {1025762, 441071239}) = 0 <0.000015>
+9810  18:22:41.394416 <... futex resumed> ) = 0 <0.000084>
+10258 18:22:41.394457 gettimeofday({1387534961, 394473}, NULL) = 0 <0.000015>
+9810  18:22:41.394515 gettimeofday( <unfinished ...>
+10258 18:22:41.394554 gettimeofday({1387534961, 394570}, NULL) = 0 <0.000015>
+9810  18:22:41.394628 <... gettimeofday resumed> {1387534961, 394540}, NULL) = 0 <0.000095>
