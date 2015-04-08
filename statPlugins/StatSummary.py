@@ -49,16 +49,18 @@ class StatSummary(StatBase):
         totalTime = reduce(lambda x,y: x+y, self._syscallTime.values())
         for syscall in sorted(self._syscallTime, key=self._syscallTime.get,
                               reverse=True):
-            percent = self._syscallTime[syscall].total_seconds() * 100 /  \
-                        totalTime.total_seconds() 
-            usecsPerCall = self._syscallTime[syscall] / \
+            percent = self.my_total_seconds(self._syscallTime[syscall]) * 100 /  \
+                        self.my_total_seconds(totalTime)
+            usecsPerCall = self.my_total_seconds(self._syscallTime[syscall]) / \
                             self._syscallCount[syscall]
             print "%6.2f %11.6f %11d %9d %s" %            \
-                  (percent, self._syscallTime[syscall].total_seconds(), 
-                   usecsPerCall.total_seconds()*(10**6), 
+                  (percent, self.my_total_seconds(self._syscallTime[syscall]),
+                   usecsPerCall*(10**6),
                    self._syscallCount[syscall], syscall)
             
         print "------ ----------- ----------- --------- ----------------"
-        print "%6.2f %11.6f %11d %9d %s" % (100, totalTime.total_seconds(), 
-                totalTime.total_seconds()*(10**6) / totalCount, totalCount, "total")
+        print "%6.2f %11.6f %11d %9d %s" % (100, self.my_total_seconds(totalTime),
+                self.my_total_seconds(totalTime)*(10**6) / totalCount, totalCount, "total")
 
+    def my_total_seconds(self, td):
+        return ((td.microseconds + (td.seconds + td.days * 24 * 3600) * 10**6) * 1.0) / 10**6
