@@ -13,9 +13,10 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-from StatBase import StatBase
 from collections import defaultdict
 from datetime import timedelta
+from StatBase import StatBase
+from Util import Util
 
 class StatSummary(StatBase):
     """ Summarize of syscall of strace, like strace -c output"""
@@ -49,18 +50,17 @@ class StatSummary(StatBase):
         totalTime = reduce(lambda x,y: x+y, self._syscallTime.values())
         for syscall in sorted(self._syscallTime, key=self._syscallTime.get,
                               reverse=True):
-            percent = self.my_total_seconds(self._syscallTime[syscall]) * 100 /  \
-                        self.my_total_seconds(totalTime)
-            usecsPerCall = self.my_total_seconds(self._syscallTime[syscall]) / \
+            percent = Util.my_total_seconds(self._syscallTime[syscall]) * 100 /  \
+                        Util.my_total_seconds(totalTime)
+            usecsPerCall = Util.my_total_seconds(self._syscallTime[syscall]) / \
                             self._syscallCount[syscall]
             print "%6.2f %11.6f %11d %9d %s" %            \
-                  (percent, self.my_total_seconds(self._syscallTime[syscall]),
+                  (percent, Util.my_total_seconds(self._syscallTime[syscall]),
                    usecsPerCall*(10**6),
                    self._syscallCount[syscall], syscall)
             
         print "------ ----------- ----------- --------- ----------------"
-        print "%6.2f %11.6f %11d %9d %s" % (100, self.my_total_seconds(totalTime),
-                self.my_total_seconds(totalTime)*(10**6) / totalCount, totalCount, "total")
+        print "%6.2f %11.6f %11d %9d %s" % (100, Util.my_total_seconds(totalTime),
+                Util.my_total_seconds(totalTime)*(10**6) / totalCount, totalCount, "total")
 
-    def my_total_seconds(self, td):
-        return ((td.microseconds + (td.seconds + td.days * 24 * 3600) * 10**6) * 1.0) / 10**6
+
