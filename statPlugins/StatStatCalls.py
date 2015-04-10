@@ -14,7 +14,7 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 import sys
-import operator
+#import operator
 
 from StatBase import StatBase
 from Util import Util
@@ -28,10 +28,17 @@ class StatStatCalls(StatBase):
         return
 
     def optionHelp(self):
-        return {"output":"Write the output to this file instead of stdout"}
+        return {"output":"Write the output to this file prefix instead of stdout"}
 
     def setOption(self, pluginOptionDict):
         self._pluginOptionDict = pluginOptionDict
+
+        filenamePrefix = self._pluginOptionDict.get("output", "")
+        filename1 = filenamePrefix + "-StatStatCalls-Detail.csv"
+        self._detailFile = open(filename1, "w") if filenamePrefix else sys.stdout
+        #f.write("====== File IO summary (csv) ======\n")
+        self._detailFile.write("filename, returncode, seconds\n")
+
         return True
 
     def getSyscallHooks(self):
@@ -44,8 +51,6 @@ class StatStatCalls(StatBase):
     def isOperational(self, straceOptions):
         return True
 
-    # 1428504926.595877 stat("/home/lsstsw/stack/ups_db/sims_photUtils/master-gdb619108a7+1.version", {st_mode=S_IFREG|0664, st_size=398, ...}) = 0 <0.000018>
-    # 1428504926.596596 stat("/home/lsstsw/stack/Linux64/sims_photUtils/master-gdb619108a7+1/ups/Linux64/sims_photUtils/master-gdb619108a7+1/ups/sims_photUtils.table", 0x7fffc442f1e0) = -1 ENOENT (No such file or directory) <0.009833>
     def statStatCalls(self, result):
         #if result["syscall"] in ["read", "write", "open", "close"]:
         if result["syscall"] in ["stat"]:
@@ -58,10 +63,7 @@ class StatStatCalls(StatBase):
             else:
                 successfulCall = 0
 
-            f = sys.stdout
-            #f.write("====== File IO summary (csv) ======\n")
-            #f.write("filename, returncode, seconds\n")
-            f.write("%s, %s, %8.6f\n" % (filename, rc, callTime))
+            self._detailFile.write("%s, %s, %8.6f\n" % (filename, rc, callTime))
 
             # accumulate into totals array
             if filename not in self._fileStatList:
@@ -77,13 +79,13 @@ class StatStatCalls(StatBase):
 
     def printOutput(self):
 
-        # filename = self._pluginOptionDict.get("output", "")
-        # f = open(filename, "w") if filename else sys.stdout
+        filenamePrefix = self._pluginOptionDict.get("output", "")
+        filename2 = filenamePrefix + "-StatStatCalls-Summary.txt"
+        self._summaryFile = open(filename2, "w") if filenamePrefix else sys.stdout
 
-        f = sys.stdout
-        f.write("====== Stat Calls Summary ======\n")
-        f.write("     total        total         time      successful    failed          \n")
-        f.write("     calls        time        per call       calls       calls  filename\n")
+        self._summaryFile.write("====== Stat Calls Summary ======\n")
+        self._summaryFile.write("     total        total         time      successful    failed          \n")
+        self._summaryFile.write("     calls        time        per call       calls       calls  filename\n")
 
         # sort by total time
         sorted_x = sorted(self._fileStatList.items(), key=lambda kvt: kvt[1][1] , reverse=True)
@@ -101,23 +103,23 @@ class StatStatCalls(StatBase):
 
             grandTotalCalls += totalCalls
             grandTotalTime += totalTime
-        
+
             #totalCalls = self._fileStatList[file][0]
             #totalTime = self._fileStatList[file][1]
             #successfulCalls = self._fileStatList[file][2]
-            f.write("%10d  %12.6f  %12.6f  %10d  %10d  %s\n" % (  totalCalls,
-                                                                totalTime,
-                                                                totalTime / totalCalls,
-                                                                successfulCalls,
-                                                                totalCalls - successfulCalls,
-                                                                filename.replace('"','')))
+            self._summaryFile.write("%10d  %12.6f  %12.6f  %10d  %10d  %s\n" % (totalCalls,
+                                                                                totalTime,
+                                                                                totalTime / totalCalls,
+                                                                                successfulCalls,
+                                                                                totalCalls - successfulCalls,
+                                                                                filename.replace('"','')))
 
 
-        f.write("Grand Totals\n")
-        f.write("%10d  %12.6f  %12.6f  %10d  %10d  %s\n" % (  grandTotalCalls,
-                                                              grandTotalTime,
-                                                              0,
-                                                              0,
-                                                              0,
-                                                              " "))
+        self._summaryFile.write("Grand Totals\n")
+        self._summaryFile.write("%10d  %12.6f  %12.6f  %10d  %10d  %s\n" % (grandTotalCalls,
+                                                                            grandTotalTime,
+                                                                            0,
+                                                                            0,
+                                                                            0,
+                                                                            " "))
         return
